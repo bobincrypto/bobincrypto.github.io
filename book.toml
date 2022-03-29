@@ -1,0 +1,6 @@
+[book]
+authors = ["Bob In Crypto"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Bob In Crypto"
