@@ -5,6 +5,6 @@ Hi!, my name (probably) is Bob!. This website is dedicated to log my journey int
 - Ethereum
     - Solidity
 - Cryptography
-- Etc
+- [Etc](./learn.md)
 
 Also, all the content in this website will be the result of the work streamed on Twitch.
