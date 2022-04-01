@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="about_me.html"><strong aria-hidden="true">1.</strong> About Me</a></li><li class="chapter-item expanded "><a href="learn.html"><strong aria-hidden="true">2.</strong> Things to Learn</a></li><li class="chapter-item expanded "><a href="mina.html"><strong aria-hidden="true">3.</strong> Mina Protocol</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="about_me.html"><strong aria-hidden="true">1.</strong> About Me</a></li><li class="chapter-item expanded "><a href="learn.html"><strong aria-hidden="true">2.</strong> Things to Learn</a></li><li class="chapter-item expanded "><a href="readings.html"><strong aria-hidden="true">3.</strong> Readings</a></li><li class="chapter-item expanded "><a href="ethereum.html"><strong aria-hidden="true">4.</strong> Ethereum</a></li><li class="chapter-item expanded "><a href="mina.html"><strong aria-hidden="true">5.</strong> Mina Protocol</a></li><li class="chapter-item expanded "><a href="#.html"><strong aria-hidden="true">6.</strong> Log</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2022_log.html"><strong aria-hidden="true">6.1.</strong> 2022</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -168,15 +168,39 @@
 </ul>
 </li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="mina-protocol"><a class="header" href="#mina-protocol">Mina Protocol</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="readings"><a class="header" href="#readings">Readings</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
-<a href="https://messari.io/article/mina-protocol-small-but-mighty?utm_source=twitter_messaricrypto&amp;utm_medium=organic_social&amp;utm_campaign=mina_protocol_small_but_mighty">Mina Protocol - Small but Mighty</a></li>
+<a href="https://vitalik.ca/general/2022/04/01/maximalist.html">https://vitalik.ca/general/2022/04/01/maximalist.html</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ethereum"><a class="header" href="#ethereum">Ethereum</a></h1>
+<h2 id="merge"><a class="header" href="#merge">Merge</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<a href="https://notes.ethereum.org/@launchpad/kiln">https://notes.ethereum.org/@launchpad/kiln</a></li>
+</ul>
+<h2 id="network-upgrades"><a class="header" href="#network-upgrades">Network Upgrades</a></h2>
+<h3 id="shanghai"><a class="header" href="#shanghai">Shanghai</a></h3>
+<ul>
+<li><a href="https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md">https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mina-protocol"><a class="header" href="#mina-protocol">Mina Protocol</a></h1>
 <p>Uses recursive cryptography.</p>
 <p>Keeps a verifiable version of the blockchain restricted to a size of 11kB.</p>
 <p>Pickles, recursively refers to itself, creating proofs of proofs, keeping blockchain at a fixed size.</p>
 <p><img src="https://pbs.twimg.com/media/FO-BWzGXoAg5osp?format=jpg&amp;name=900x900" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="log"><a class="header" href="#log">Log</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="2022"><a class="header" href="#2022">2022</a></h1>
+<h2 id="march-29"><a class="header" href="#march-29">March 29</a></h2>
+<ul>
+<li>Setup my <a href="https://bobincrypto.github.io">website</a></li>
+<li>Read about <a href="./mina.html">Mina Protocol</a></li>
+</ul>
+<h2 id="april-1"><a class="header" href="#april-1">April 1</a></h2>
+<p><a href="./ethereum.html#merge">Ethereum Merge</a> currently tested on the Kiln Testnet. It would be interesting to
+run the EL/CL nodes.</p>
+<p><a href="./ethereum.html#shanghai">Shanghai Network</a> has EIPs Considered For Inclusion.
+WOuld be interesting to see what changes it implements.</p>
 
                     </main>
 
@@ -195,6 +219,20 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

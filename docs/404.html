@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="about_me.html"><strong aria-hidden="true">1.</strong> About Me</a></li><li class="chapter-item expanded "><a href="learn.html"><strong aria-hidden="true">2.</strong> Things to Learn</a></li><li class="chapter-item expanded "><a href="mina.html"><strong aria-hidden="true">3.</strong> Mina Protocol</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="about_me.html"><strong aria-hidden="true">1.</strong> About Me</a></li><li class="chapter-item expanded "><a href="learn.html"><strong aria-hidden="true">2.</strong> Things to Learn</a></li><li class="chapter-item expanded "><a href="readings.html"><strong aria-hidden="true">3.</strong> Readings</a></li><li class="chapter-item expanded "><a href="ethereum.html"><strong aria-hidden="true">4.</strong> Ethereum</a></li><li class="chapter-item expanded "><a href="mina.html"><strong aria-hidden="true">5.</strong> Mina Protocol</a></li><li class="chapter-item expanded "><a href="#.html"><strong aria-hidden="true">6.</strong> Log</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2022_log.html"><strong aria-hidden="true">6.1.</strong> 2022</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -163,6 +163,20 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
