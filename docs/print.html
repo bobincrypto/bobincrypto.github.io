@@ -157,6 +157,8 @@
 <p>Also, all the content in this website will be the result of the work streamed on Twitch.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="things-to-learninvestigate"><a class="header" href="#things-to-learninvestigate">Things to Learn/Investigate</a></h1>
 <ul>
+<li>Solidity</li>
+<li>Rust</li>
 <li><a href="./mina.html">Mina Protocol</a>
 <ul>
 <li>What is <em>recursive cryptography</em></li>
@@ -169,10 +171,6 @@
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="readings"><a class="header" href="#readings">Readings</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<a href="https://vitalik.ca/general/2022/04/01/maximalist.html">https://vitalik.ca/general/2022/04/01/maximalist.html</a></li>
-</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ethereum"><a class="header" href="#ethereum">Ethereum</a></h1>
 <h2 id="merge"><a class="header" href="#merge">Merge</a></h2>
 <ul>
@@ -201,6 +199,36 @@
 run the EL/CL nodes.</p>
 <p><a href="./ethereum.html#shanghai">Shanghai Network</a> has EIPs Considered For Inclusion.
 WOuld be interesting to see what changes it implements.</p>
+<h2 id="april-8"><a class="header" href="#april-8">April 8</a></h2>
+<h3 id="sway-language"><a class="header" href="#sway-language">Sway Language</a></h3>
+<ul>
+<li><a href="https://fuellabs.github.io/sway/latest/">Sway Book</a></li>
+</ul>
+<p>Is this similar to <a href="https://fe-lang.org/">Fe Language</a>?</p>
+<p>Specific for the Fuel Blockchain (not EVM Compatible)</p>
+<h3 id="fuelvm"><a class="header" href="#fuelvm">FuelVM</a></h3>
+<ul>
+<li>
+<p>Instructions (32-bits / 4 bytes)</p>
+<ul>
+<li>Opcode: 8bits</li>
+<li>Register: 6bits</li>
+<li>Immediate value: 12/18/24 bits (depending on operation)</li>
+</ul>
+</li>
+<li>
+<p>Registers (64bits / 8bytes)</p>
+</li>
+<li>
+<p>Words (64 bits)</p>
+</li>
+<li>
+<p>Storage (Persistent State) 32-byte (256bits)</p>
+<ul>
+<li>Committed into a Sparse Binary Merkle Tree.</li>
+</ul>
+</li>
+</ul>
 
                     </main>
 
@@ -219,20 +247,6 @@ WOuld be interesting to see what changes it implements.</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
