@@ -1,0 +1,1114 @@
+[0m[32m  Compiled library "core".
+[0m[1;38;5;9merror[0m
+   [1;38;5;12m-->[0m sway-lib-core/src/ops.sw:272:9
+[1;38;5;12m    |[0m
+[1;38;5;12m270 |[0m 
+[1;38;5;12m271 |[0m     fn neq(self, other: Self) -> bool {
+[1;38;5;12m272 |[0m         not(self.eq(other))
+[1;38;5;12m    |[0m[1;38;5;9m         ^^^[0m [1;38;5;9mCould not find symbol "not" in this scope.[0m
+[1;38;5;12m273 |[0m     }
+[1;38;5;12m274 |[0m }
+[1;38;5;12m    |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:6:7
+[1;38;5;12m  |[0m
+[1;38;5;12m4 |[0m 
+[1;38;5;12m5 |[0m 
+[1;38;5;12m6 |[0m use ::contract_id::ContractId;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^^^^^[0m [1;38;5;9mModule "contract_id" could not be found.[0m
+[1;38;5;12m7 |[0m 
+[1;38;5;12m8 |[0m // Note that everything when serialized is padded to word length.
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/context:23:25
+[1;38;5;12m   |[0m
+[1;38;5;12m21 |[0m 
+[1;38;5;12m22 |[0m // @dev If called externally, will actually return a pointer to the transaction ID.
+[1;38;5;12m23 |[0m pub fn contract_id() -> ContractId {
+[1;38;5;12m   |[0m[1;38;5;9m                         ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m24 |[0m     ~ContractId::from(asm() {
+[1;38;5;12m25 |[0m         fp: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:23:25
+[1;38;5;12m   |[0m
+[1;38;5;12m21 |[0m 
+[1;38;5;12m22 |[0m // @dev If called externally, will actually return a pointer to the transaction ID.
+[1;38;5;12m23 |[0m pub fn contract_id() -> ContractId {
+[1;38;5;12m   |[0m[1;38;5;9m                         ^^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m24 |[0m     ~ContractId::from(asm() {
+[1;38;5;12m25 |[0m         fp: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/context:24:6
+[1;38;5;12m   |[0m
+[1;38;5;12m22 |[0m 
+[1;38;5;12m23 |[0m pub fn contract_id() -> ContractId {
+[1;38;5;12m24 |[0m     ~ContractId::from(asm() {
+[1;38;5;12m   |[0m[1;38;5;9m      ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m25 |[0m         fp: b256
+[1;38;5;12m26 |[0m     })
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:24:18
+[1;38;5;12m   |[0m
+[1;38;5;12m22 |[0m 
+[1;38;5;12m23 |[0m pub fn contract_id() -> ContractId {
+[1;38;5;12m24 |[0m     ~ContractId::from(asm() {
+[1;38;5;12m   |[0m[1;38;5;9m                  ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m25 |[0m         fp: b256
+[1;38;5;12m26 |[0m     })
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:24:18
+[1;38;5;12m   |[0m
+[1;38;5;12m22 |[0m 
+[1;38;5;12m23 |[0m pub fn contract_id() -> ContractId {
+[1;38;5;12m24 |[0m     ~ContractId::from(asm() {
+[1;38;5;12m   |[0m[1;38;5;9m                  ^^^^[0m [1;38;5;9mNo method named "from" found for type "unknown due to error".[0m
+[1;38;5;12m25 |[0m         fp: b256
+[1;38;5;12m26 |[0m     })
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/context:30:26
+[1;38;5;12m   |[0m
+[1;38;5;12m28 |[0m 
+[1;38;5;12m29 |[0m /// Get the asset_id of coins being sent from the current call frame.
+[1;38;5;12m30 |[0m pub fn msg_asset_id() -> ContractId {
+[1;38;5;12m   |[0m[1;38;5;9m                          ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m31 |[0m     ~ContractId::from(asm(asset_id) {
+[1;38;5;12m32 |[0m         addi asset_id fp i32;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:30:26
+[1;38;5;12m   |[0m
+[1;38;5;12m28 |[0m 
+[1;38;5;12m29 |[0m /// Get the asset_id of coins being sent from the current call frame.
+[1;38;5;12m30 |[0m pub fn msg_asset_id() -> ContractId {
+[1;38;5;12m   |[0m[1;38;5;9m                          ^^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m31 |[0m     ~ContractId::from(asm(asset_id) {
+[1;38;5;12m32 |[0m         addi asset_id fp i32;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/context:31:6
+[1;38;5;12m   |[0m
+[1;38;5;12m29 |[0m 
+[1;38;5;12m30 |[0m pub fn msg_asset_id() -> ContractId {
+[1;38;5;12m31 |[0m     ~ContractId::from(asm(asset_id) {
+[1;38;5;12m   |[0m[1;38;5;9m      ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m32 |[0m         addi asset_id fp i32;
+[1;38;5;12m33 |[0m         asset_id: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:31:18
+[1;38;5;12m   |[0m
+[1;38;5;12m29 |[0m 
+[1;38;5;12m30 |[0m pub fn msg_asset_id() -> ContractId {
+[1;38;5;12m31 |[0m     ~ContractId::from(asm(asset_id) {
+[1;38;5;12m   |[0m[1;38;5;9m                  ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m32 |[0m         addi asset_id fp i32;
+[1;38;5;12m33 |[0m         asset_id: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:31:18
+[1;38;5;12m   |[0m
+[1;38;5;12m29 |[0m 
+[1;38;5;12m30 |[0m pub fn msg_asset_id() -> ContractId {
+[1;38;5;12m31 |[0m     ~ContractId::from(asm(asset_id) {
+[1;38;5;12m   |[0m[1;38;5;9m                  ^^^^[0m [1;38;5;9mNo method named "from" found for type "unknown due to error".[0m
+[1;38;5;12m32 |[0m         addi asset_id fp i32;
+[1;38;5;12m33 |[0m         asset_id: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/context:75:63
+[1;38;5;12m   |[0m
+[1;38;5;12m73 |[0m 
+[1;38;5;12m74 |[0m /// get the value of `ContractId` from any call frame on the stack.
+[1;38;5;12m75 |[0m pub fn get_contract_id_from_call_frame(frame_pointer: u64) -> ContractId {
+[1;38;5;12m   |[0m[1;38;5;9m                                                               ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m76 |[0m     ~ContractId::from(asm(res, ptr: frame_pointer) {
+[1;38;5;12m77 |[0m         ptr: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:75:63
+[1;38;5;12m   |[0m
+[1;38;5;12m73 |[0m 
+[1;38;5;12m74 |[0m /// get the value of `ContractId` from any call frame on the stack.
+[1;38;5;12m75 |[0m pub fn get_contract_id_from_call_frame(frame_pointer: u64) -> ContractId {
+[1;38;5;12m   |[0m[1;38;5;9m                                                               ^^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m76 |[0m     ~ContractId::from(asm(res, ptr: frame_pointer) {
+[1;38;5;12m77 |[0m         ptr: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/context:76:6
+[1;38;5;12m   |[0m
+[1;38;5;12m74 |[0m 
+[1;38;5;12m75 |[0m pub fn get_contract_id_from_call_frame(frame_pointer: u64) -> ContractId {
+[1;38;5;12m76 |[0m     ~ContractId::from(asm(res, ptr: frame_pointer) {
+[1;38;5;12m   |[0m[1;38;5;9m      ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m77 |[0m         ptr: b256
+[1;38;5;12m78 |[0m     })
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:76:18
+[1;38;5;12m   |[0m
+[1;38;5;12m74 |[0m 
+[1;38;5;12m75 |[0m pub fn get_contract_id_from_call_frame(frame_pointer: u64) -> ContractId {
+[1;38;5;12m76 |[0m     ~ContractId::from(asm(res, ptr: frame_pointer) {
+[1;38;5;12m   |[0m[1;38;5;9m                  ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m77 |[0m         ptr: b256
+[1;38;5;12m78 |[0m     })
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context/call_frames.sw:76:18
+[1;38;5;12m   |[0m
+[1;38;5;12m74 |[0m 
+[1;38;5;12m75 |[0m pub fn get_contract_id_from_call_frame(frame_pointer: u64) -> ContractId {
+[1;38;5;12m76 |[0m     ~ContractId::from(asm(res, ptr: frame_pointer) {
+[1;38;5;12m   |[0m[1;38;5;9m                  ^^^^[0m [1;38;5;9mNo method named "from" found for type "unknown due to error".[0m
+[1;38;5;12m77 |[0m         ptr: b256
+[1;38;5;12m78 |[0m     })
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/context.sw:6:7
+[1;38;5;12m  |[0m
+[1;38;5;12m4 |[0m 
+[1;38;5;12m5 |[0m 
+[1;38;5;12m6 |[0m use ::contract_id::ContractId;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^^^^^[0m [1;38;5;9mModule "contract_id" could not be found.[0m
+[1;38;5;12m7 |[0m use call_frames::*;
+[1;38;5;12m8 |[0m use registers::balance;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/context.sw:7:5
+[1;38;5;12m  |[0m
+[1;38;5;12m5 |[0m 
+[1;38;5;12m6 |[0m use ::contract_id::ContractId;
+[1;38;5;12m7 |[0m use call_frames::*;
+[1;38;5;12m  |[0m[1;38;5;9m     ^^^^^^^^^^^[0m [1;38;5;9mModule "call_frames" could not be found.[0m
+[1;38;5;12m8 |[0m use registers::balance;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:16:29
+[1;38;5;12m   |[0m
+[1;38;5;12m14 |[0m 
+[1;38;5;12m15 |[0m /// Get the balance of coin `asset_id` for for the contract at 'target'.
+[1;38;5;12m16 |[0m pub fn balance_of(asset_id: ContractId, target: ContractId) -> u64 {
+[1;38;5;12m   |[0m[1;38;5;9m                             ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m17 |[0m     asm(balance, token: asset_id.value, id: target.value) {
+[1;38;5;12m18 |[0m         bal balance token id;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context.sw:16:29
+[1;38;5;12m   |[0m
+[1;38;5;12m14 |[0m 
+[1;38;5;12m15 |[0m /// Get the balance of coin `asset_id` for for the contract at 'target'.
+[1;38;5;12m16 |[0m pub fn balance_of(asset_id: ContractId, target: ContractId) -> u64 {
+[1;38;5;12m   |[0m[1;38;5;9m                             ^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m17 |[0m     asm(balance, token: asset_id.value, id: target.value) {
+[1;38;5;12m18 |[0m         bal balance token id;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:16:49
+[1;38;5;12m   |[0m
+[1;38;5;12m14 |[0m 
+[1;38;5;12m15 |[0m /// Get the balance of coin `asset_id` for for the contract at 'target'.
+[1;38;5;12m16 |[0m pub fn balance_of(asset_id: ContractId, target: ContractId) -> u64 {
+[1;38;5;12m   |[0m[1;38;5;9m                                                 ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m17 |[0m     asm(balance, token: asset_id.value, id: target.value) {
+[1;38;5;12m18 |[0m         bal balance token id;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context.sw:16:49
+[1;38;5;12m   |[0m
+[1;38;5;12m14 |[0m 
+[1;38;5;12m15 |[0m /// Get the balance of coin `asset_id` for for the contract at 'target'.
+[1;38;5;12m16 |[0m pub fn balance_of(asset_id: ContractId, target: ContractId) -> u64 {
+[1;38;5;12m   |[0m[1;38;5;9m                                                 ^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m17 |[0m     asm(balance, token: asset_id.value, id: target.value) {
+[1;38;5;12m18 |[0m         bal balance token id;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:11:31
+[1;38;5;12m   |[0m
+[1;38;5;12m 9 |[0m 
+[1;38;5;12m10 |[0m /// Get the balance of coin `asset_id` for the current contract.
+[1;38;5;12m11 |[0m pub fn this_balance(asset_id: ContractId) -> u64 {
+[1;38;5;12m   |[0m[1;38;5;9m                               ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m12 |[0m     balance_of(asset_id, contract_id())
+[1;38;5;12m13 |[0m }
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context.sw:11:31
+[1;38;5;12m   |[0m
+[1;38;5;12m 9 |[0m 
+[1;38;5;12m10 |[0m /// Get the balance of coin `asset_id` for the current contract.
+[1;38;5;12m11 |[0m pub fn this_balance(asset_id: ContractId) -> u64 {
+[1;38;5;12m   |[0m[1;38;5;9m                               ^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m12 |[0m     balance_of(asset_id, contract_id())
+[1;38;5;12m13 |[0m }
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/context.sw:12:26
+[1;38;5;12m   |[0m
+[1;38;5;12m10 |[0m 
+[1;38;5;12m11 |[0m pub fn this_balance(asset_id: ContractId) -> u64 {
+[1;38;5;12m12 |[0m     balance_of(asset_id, contract_id())
+[1;38;5;12m   |[0m[1;38;5;9m                          ^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "contract_id" in this scope.[0m
+[1;38;5;12m13 |[0m }
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/tx.sw:5:7
+[1;38;5;12m  |[0m
+[1;38;5;12m3 |[0m 
+[1;38;5;12m4 |[0m 
+[1;38;5;12m5 |[0m use ::address::Address;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^[0m [1;38;5;9mModule "address" could not be found.[0m
+[1;38;5;12m6 |[0m use ::contract_id::ContractId;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/tx.sw:6:7
+[1;38;5;12m  |[0m
+[1;38;5;12m4 |[0m 
+[1;38;5;12m5 |[0m use ::address::Address;
+[1;38;5;12m6 |[0m use ::contract_id::ContractId;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^^^^^[0m [1;38;5;9mModule "contract_id" could not be found.[0m
+[1;38;5;12m7 |[0m 
+[1;38;5;12m8 |[0m ////////////////////////////////////////
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+   [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:184:47
+[1;38;5;12m    |[0m
+[1;38;5;12m182 |[0m 
+[1;38;5;12m183 |[0m /// Otherwise, undefined behavior.
+[1;38;5;12m184 |[0m pub fn tx_input_coin_owner(input_ptr: u32) -> Address {
+[1;38;5;12m    |[0m[1;38;5;9m                                               ^^^^^^^[0m [1;38;5;9mCould not find symbol "Address" in this scope.[0m
+[1;38;5;12m185 |[0m     let owner_addr = ~Address::from(asm(buffer, ptr: input_ptr) {
+[1;38;5;12m186 |[0m         // Need to skip over six words, so add 8*6=48
+[1;38;5;12m    |[0m
+____
+
+[1;38;5;9merror[0m
+   [1;38;5;12m-->[0m sway-lib-std/src/tx.sw:184:47
+[1;38;5;12m    |[0m
+[1;38;5;12m182 |[0m 
+[1;38;5;12m183 |[0m /// Otherwise, undefined behavior.
+[1;38;5;12m184 |[0m pub fn tx_input_coin_owner(input_ptr: u32) -> Address {
+[1;38;5;12m    |[0m[1;38;5;9m                                               ^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m185 |[0m     let owner_addr = ~Address::from(asm(buffer, ptr: input_ptr) {
+[1;38;5;12m186 |[0m         // Need to skip over six words, so add 8*6=48
+[1;38;5;12m    |[0m
+____
+
+[1;38;5;9merror[0m
+   [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:185:23
+[1;38;5;12m    |[0m
+[1;38;5;12m183 |[0m 
+[1;38;5;12m184 |[0m pub fn tx_input_coin_owner(input_ptr: u32) -> Address {
+[1;38;5;12m185 |[0m     let owner_addr = ~Address::from(asm(buffer, ptr: input_ptr) {
+[1;38;5;12m    |[0m[1;38;5;9m                       ^^^^^^^[0m [1;38;5;9mCould not find symbol "Address" in this scope.[0m
+[1;38;5;12m186 |[0m         // Need to skip over six words, so add 8*6=48
+[1;38;5;12m187 |[0m         addi ptr ptr i48;
+[1;38;5;12m    |[0m
+____
+
+[1;38;5;9merror[0m
+   [1;38;5;12m-->[0m sway-lib-std/src/tx.sw:185:32
+[1;38;5;12m    |[0m
+[1;38;5;12m183 |[0m 
+[1;38;5;12m184 |[0m pub fn tx_input_coin_owner(input_ptr: u32) -> Address {
+[1;38;5;12m185 |[0m     let owner_addr = ~Address::from(asm(buffer, ptr: input_ptr) {
+[1;38;5;12m    |[0m[1;38;5;9m                                ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m186 |[0m         // Need to skip over six words, so add 8*6=48
+[1;38;5;12m187 |[0m         addi ptr ptr i48;
+[1;38;5;12m    |[0m
+____
+
+[1;38;5;9merror[0m
+   [1;38;5;12m-->[0m sway-lib-std/src/tx.sw:185:32
+[1;38;5;12m    |[0m
+[1;38;5;12m183 |[0m 
+[1;38;5;12m184 |[0m pub fn tx_input_coin_owner(input_ptr: u32) -> Address {
+[1;38;5;12m185 |[0m     let owner_addr = ~Address::from(asm(buffer, ptr: input_ptr) {
+[1;38;5;12m    |[0m[1;38;5;9m                                ^^^^[0m [1;38;5;9mNo method named "from" found for type "unknown due to error".[0m
+[1;38;5;12m186 |[0m         // Need to skip over six words, so add 8*6=48
+[1;38;5;12m187 |[0m         addi ptr ptr i48;
+[1;38;5;12m    |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:4:7
+[1;38;5;12m  |[0m
+[1;38;5;12m2 |[0m 
+[1;38;5;12m3 |[0m 
+[1;38;5;12m4 |[0m use ::address::Address;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^[0m [1;38;5;9mModule "address" could not be found.[0m
+[1;38;5;12m5 |[0m use ::assert::assert;
+[1;38;5;12m6 |[0m use ::b512::B512;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:6:7
+[1;38;5;12m  |[0m
+[1;38;5;12m4 |[0m 
+[1;38;5;12m5 |[0m use ::assert::assert;
+[1;38;5;12m6 |[0m use ::b512::B512;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^[0m [1;38;5;9mModule "b512" could not be found.[0m
+[1;38;5;12m7 |[0m use ::contract_id::ContractId;
+[1;38;5;12m8 |[0m use ::option::*;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:7:7
+[1;38;5;12m  |[0m
+[1;38;5;12m5 |[0m 
+[1;38;5;12m6 |[0m use ::b512::B512;
+[1;38;5;12m7 |[0m use ::contract_id::ContractId;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^^^^^[0m [1;38;5;9mModule "contract_id" could not be found.[0m
+[1;38;5;12m8 |[0m use ::option::*;
+[1;38;5;12m9 |[0m use ::result::Result;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:10:7
+[1;38;5;12m   |[0m
+[1;38;5;12m 8 |[0m 
+[1;38;5;12m 9 |[0m use ::result::Result;
+[1;38;5;12m10 |[0m use ::tx::*;
+[1;38;5;12m   |[0m[1;38;5;9m       ^^[0m [1;38;5;9mModule "tx" could not be found.[0m
+[1;38;5;12m11 |[0m 
+[1;38;5;12m12 |[0m pub enum AuthError {
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/chain:33:32
+[1;38;5;12m   |[0m
+[1;38;5;12m31 |[0m 
+[1;38;5;12m32 |[0m /// Otherwise, undefined behavior.
+[1;38;5;12m33 |[0m pub fn caller_contract_id() -> ContractId {
+[1;38;5;12m   |[0m[1;38;5;9m                                ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m34 |[0m     ~ContractId::from(asm(r1) {
+[1;38;5;12m35 |[0m         gm r1 i2;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:33:32
+[1;38;5;12m   |[0m
+[1;38;5;12m31 |[0m 
+[1;38;5;12m32 |[0m /// Otherwise, undefined behavior.
+[1;38;5;12m33 |[0m pub fn caller_contract_id() -> ContractId {
+[1;38;5;12m   |[0m[1;38;5;9m                                ^^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m34 |[0m     ~ContractId::from(asm(r1) {
+[1;38;5;12m35 |[0m         gm r1 i2;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/chain:34:6
+[1;38;5;12m   |[0m
+[1;38;5;12m32 |[0m 
+[1;38;5;12m33 |[0m pub fn caller_contract_id() -> ContractId {
+[1;38;5;12m34 |[0m     ~ContractId::from(asm(r1) {
+[1;38;5;12m   |[0m[1;38;5;9m      ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m35 |[0m         gm r1 i2;
+[1;38;5;12m36 |[0m         r1: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:34:18
+[1;38;5;12m   |[0m
+[1;38;5;12m32 |[0m 
+[1;38;5;12m33 |[0m pub fn caller_contract_id() -> ContractId {
+[1;38;5;12m34 |[0m     ~ContractId::from(asm(r1) {
+[1;38;5;12m   |[0m[1;38;5;9m                  ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m35 |[0m         gm r1 i2;
+[1;38;5;12m36 |[0m         r1: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:34:18
+[1;38;5;12m   |[0m
+[1;38;5;12m32 |[0m 
+[1;38;5;12m33 |[0m pub fn caller_contract_id() -> ContractId {
+[1;38;5;12m34 |[0m     ~ContractId::from(asm(r1) {
+[1;38;5;12m   |[0m[1;38;5;9m                  ^^^^[0m [1;38;5;9mNo method named "from" found for type "unknown due to error".[0m
+[1;38;5;12m35 |[0m         gm r1 i2;
+[1;38;5;12m36 |[0m         r1: b256
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:60:24
+[1;38;5;12m   |[0m
+[1;38;5;12m58 |[0m 
+[1;38;5;12m59 |[0m     let target_input_type = 0u8;
+[1;38;5;12m60 |[0m     let inputs_count = tx_inputs_count();
+[1;38;5;12m   |[0m[1;38;5;9m                        ^^^^^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "tx_inputs_count" in this scope.[0m
+[1;38;5;12m61 |[0m 
+[1;38;5;12m62 |[0m     let mut candidate = Option::None::<Address>();
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src/chain:62:40
+[1;38;5;12m   |[0m
+[1;38;5;12m60 |[0m 
+[1;38;5;12m61 |[0m 
+[1;38;5;12m62 |[0m     let mut candidate = Option::None::<Address>();
+[1;38;5;12m   |[0m[1;38;5;9m                                        ^^^^^^^[0m [1;38;5;9mCould not find symbol "Address" in this scope.[0m
+[1;38;5;12m63 |[0m     let mut i = 0u64;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:62:40
+[1;38;5;12m   |[0m
+[1;38;5;12m60 |[0m 
+[1;38;5;12m61 |[0m 
+[1;38;5;12m62 |[0m     let mut candidate = Option::None::<Address>();
+[1;38;5;12m   |[0m[1;38;5;9m                                        ^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m63 |[0m     let mut i = 0u64;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:66:29
+[1;38;5;12m   |[0m
+[1;38;5;12m64 |[0m 
+[1;38;5;12m65 |[0m     while i < inputs_count {
+[1;38;5;12m66 |[0m         let input_pointer = tx_input_pointer(i);
+[1;38;5;12m   |[0m[1;38;5;9m                             ^^^^^^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "tx_input_pointer" in this scope.[0m
+[1;38;5;12m67 |[0m         let input_type = tx_input_type(input_pointer);
+[1;38;5;12m68 |[0m         if input_type != target_input_type {
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:67:26
+[1;38;5;12m   |[0m
+[1;38;5;12m65 |[0m 
+[1;38;5;12m66 |[0m         let input_pointer = tx_input_pointer(i);
+[1;38;5;12m67 |[0m         let input_type = tx_input_type(input_pointer);
+[1;38;5;12m   |[0m[1;38;5;9m                          ^^^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "tx_input_type" in this scope.[0m
+[1;38;5;12m68 |[0m         if input_type != target_input_type {
+[1;38;5;12m69 |[0m             // type != InputCoin
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/chain/auth.sw:74:44
+[1;38;5;12m   |[0m
+[1;38;5;12m72 |[0m 
+[1;38;5;12m73 |[0m             // type == InputCoin
+[1;38;5;12m74 |[0m             let input_owner = Option::Some(tx_input_coin_owner(input_pointer));
+[1;38;5;12m   |[0m[1;38;5;9m                                            ^^^^^^^^^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "tx_input_coin_owner" in this scope.[0m
+[1;38;5;12m75 |[0m             if candidate.is_none() {
+[1;38;5;12m76 |[0m                 // This is the first input seen of the correct type.
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/token.sw:4:7
+[1;38;5;12m  |[0m
+[1;38;5;12m2 |[0m 
+[1;38;5;12m3 |[0m 
+[1;38;5;12m4 |[0m use ::address::Address;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^[0m [1;38;5;9mModule "address" could not be found.[0m
+[1;38;5;12m5 |[0m use ::contract_id::ContractId;
+[1;38;5;12m6 |[0m use ::panic::panic;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/token.sw:5:7
+[1;38;5;12m  |[0m
+[1;38;5;12m3 |[0m 
+[1;38;5;12m4 |[0m use ::address::Address;
+[1;38;5;12m5 |[0m use ::contract_id::ContractId;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^^^^^[0m [1;38;5;9mModule "contract_id" could not be found.[0m
+[1;38;5;12m6 |[0m use ::panic::panic;
+[1;38;5;12m7 |[0m use ::tx::*;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/token.sw:7:7
+[1;38;5;12m  |[0m
+[1;38;5;12m5 |[0m 
+[1;38;5;12m6 |[0m use ::panic::panic;
+[1;38;5;12m7 |[0m use ::tx::*;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^[0m [1;38;5;9mModule "tx" could not be found.[0m
+[1;38;5;12m8 |[0m use ::context::call_frames::contract_id;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:8:7
+[1;38;5;12m   |[0m
+[1;38;5;12m 6 |[0m 
+[1;38;5;12m 7 |[0m use ::tx::*;
+[1;38;5;12m 8 |[0m use ::context::call_frames::contract_id;
+[1;38;5;12m   |[0m[1;38;5;9m       ^^^^^^^^^^^^^^^^^^^^[0m [1;38;5;9mModule "context::call_frames" could not be found.[0m
+[1;38;5;12m 9 |[0m 
+[1;38;5;12m10 |[0m /// Mint `amount` coins of the current contract's `asset_id` and send them (!!! UNCONDITIONALLY !!!) to the contract at `destination`.
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:41:46
+[1;38;5;12m   |[0m
+[1;38;5;12m39 |[0m 
+[1;38;5;12m40 |[0m /// Use of this function can lead to irretrievable loss of coins if not used with caution.
+[1;38;5;12m41 |[0m pub fn force_transfer(amount: u64, asset_id: ContractId, destination: ContractId) {
+[1;38;5;12m   |[0m[1;38;5;9m                                              ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m42 |[0m     asm(r1: amount, r2: asset_id.value, r3: destination.value) {
+[1;38;5;12m43 |[0m         tr r3 r1 r2;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:41:46
+[1;38;5;12m   |[0m
+[1;38;5;12m39 |[0m 
+[1;38;5;12m40 |[0m /// Use of this function can lead to irretrievable loss of coins if not used with caution.
+[1;38;5;12m41 |[0m pub fn force_transfer(amount: u64, asset_id: ContractId, destination: ContractId) {
+[1;38;5;12m   |[0m[1;38;5;9m                                              ^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m42 |[0m     asm(r1: amount, r2: asset_id.value, r3: destination.value) {
+[1;38;5;12m43 |[0m         tr r3 r1 r2;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:41:71
+[1;38;5;12m   |[0m
+[1;38;5;12m39 |[0m 
+[1;38;5;12m40 |[0m /// Use of this function can lead to irretrievable loss of coins if not used with caution.
+[1;38;5;12m41 |[0m pub fn force_transfer(amount: u64, asset_id: ContractId, destination: ContractId) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                                       ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m42 |[0m     asm(r1: amount, r2: asset_id.value, r3: destination.value) {
+[1;38;5;12m43 |[0m         tr r3 r1 r2;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:41:71
+[1;38;5;12m   |[0m
+[1;38;5;12m39 |[0m 
+[1;38;5;12m40 |[0m /// Use of this function can lead to irretrievable loss of coins if not used with caution.
+[1;38;5;12m41 |[0m pub fn force_transfer(amount: u64, asset_id: ContractId, destination: ContractId) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                                       ^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m42 |[0m     asm(r1: amount, r2: asset_id.value, r3: destination.value) {
+[1;38;5;12m43 |[0m         tr r3 r1 r2;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:13:51
+[1;38;5;12m   |[0m
+[1;38;5;12m11 |[0m 
+[1;38;5;12m12 |[0m /// Use of this function can lead to irretrievable loss of coins if not used with caution.
+[1;38;5;12m13 |[0m pub fn mint_to_contract(amount: u64, destination: ContractId) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                   ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m14 |[0m     mint(amount);
+[1;38;5;12m15 |[0m     force_transfer(amount, contract_id(), destination);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:13:51
+[1;38;5;12m   |[0m
+[1;38;5;12m11 |[0m 
+[1;38;5;12m12 |[0m /// Use of this function can lead to irretrievable loss of coins if not used with caution.
+[1;38;5;12m13 |[0m pub fn mint_to_contract(amount: u64, destination: ContractId) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                   ^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m14 |[0m     mint(amount);
+[1;38;5;12m15 |[0m     force_transfer(amount, contract_id(), destination);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:15:28
+[1;38;5;12m   |[0m
+[1;38;5;12m13 |[0m 
+[1;38;5;12m14 |[0m     mint(amount);
+[1;38;5;12m15 |[0m     force_transfer(amount, contract_id(), destination);
+[1;38;5;12m   |[0m[1;38;5;9m                            ^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "contract_id" in this scope.[0m
+[1;38;5;12m16 |[0m }
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:48:50
+[1;38;5;12m   |[0m
+[1;38;5;12m46 |[0m 
+[1;38;5;12m47 |[0m /// Transfer `amount` coins of tof type `asset_id` and send them to the address `recipient`.
+[1;38;5;12m48 |[0m pub fn transfer_to_output(amount: u64, asset_id: ContractId, recipient: Address) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                  ^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "ContractId" in this scope.[0m
+[1;38;5;12m49 |[0m     const OUTPUT_VARIABLE_TYPE: u8 = 4;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:48:50
+[1;38;5;12m   |[0m
+[1;38;5;12m46 |[0m 
+[1;38;5;12m47 |[0m /// Transfer `amount` coins of tof type `asset_id` and send them to the address `recipient`.
+[1;38;5;12m48 |[0m pub fn transfer_to_output(amount: u64, asset_id: ContractId, recipient: Address) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                  ^^^^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m49 |[0m     const OUTPUT_VARIABLE_TYPE: u8 = 4;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:48:73
+[1;38;5;12m   |[0m
+[1;38;5;12m46 |[0m 
+[1;38;5;12m47 |[0m /// Transfer `amount` coins of tof type `asset_id` and send them to the address `recipient`.
+[1;38;5;12m48 |[0m pub fn transfer_to_output(amount: u64, asset_id: ContractId, recipient: Address) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                                         ^^^^^^^[0m [1;38;5;9mCould not find symbol "Address" in this scope.[0m
+[1;38;5;12m49 |[0m     const OUTPUT_VARIABLE_TYPE: u8 = 4;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:48:73
+[1;38;5;12m   |[0m
+[1;38;5;12m46 |[0m 
+[1;38;5;12m47 |[0m /// Transfer `amount` coins of tof type `asset_id` and send them to the address `recipient`.
+[1;38;5;12m48 |[0m pub fn transfer_to_output(amount: u64, asset_id: ContractId, recipient: Address) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                                         ^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m49 |[0m     const OUTPUT_VARIABLE_TYPE: u8 = 4;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:59:25
+[1;38;5;12m   |[0m
+[1;38;5;12m57 |[0m 
+[1;38;5;12m58 |[0m     // variable output with a value of zero is by definition unused.
+[1;38;5;12m59 |[0m     let outputs_count = tx_outputs_count();
+[1;38;5;12m   |[0m[1;38;5;9m                         ^^^^^^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "tx_outputs_count" in this scope.[0m
+[1;38;5;12m60 |[0m     while index < outputs_count {
+[1;38;5;12m61 |[0m         let output_pointer = tx_output_pointer(index);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:61:30
+[1;38;5;12m   |[0m
+[1;38;5;12m59 |[0m 
+[1;38;5;12m60 |[0m     while index < outputs_count {
+[1;38;5;12m61 |[0m         let output_pointer = tx_output_pointer(index);
+[1;38;5;12m   |[0m[1;38;5;9m                              ^^^^^^^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "tx_output_pointer" in this scope.[0m
+[1;38;5;12m62 |[0m         if tx_output_type(output_pointer) == OUTPUT_VARIABLE_TYPE && tx_output_amount(output_pointer) == 0 {
+[1;38;5;12m63 |[0m             output_index = index;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:62:12
+[1;38;5;12m   |[0m
+[1;38;5;12m60 |[0m 
+[1;38;5;12m61 |[0m         let output_pointer = tx_output_pointer(index);
+[1;38;5;12m62 |[0m         if tx_output_type(output_pointer) == OUTPUT_VARIABLE_TYPE && tx_output_amount(output_pointer) == 0 {
+[1;38;5;12m   |[0m[1;38;5;9m            ^^^^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "tx_output_type" in this scope.[0m
+[1;38;5;12m63 |[0m             output_index = index;
+[1;38;5;12m64 |[0m             output_found = true;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:62:70
+[1;38;5;12m   |[0m
+[1;38;5;12m60 |[0m 
+[1;38;5;12m61 |[0m         let output_pointer = tx_output_pointer(index);
+[1;38;5;12m62 |[0m         if tx_output_type(output_pointer) == OUTPUT_VARIABLE_TYPE && tx_output_amount(output_pointer) == 0 {
+[1;38;5;12m   |[0m[1;38;5;9m                                                                      ^^^^^^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "tx_output_amount" in this scope.[0m
+[1;38;5;12m63 |[0m             output_index = index;
+[1;38;5;12m64 |[0m             output_found = true;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:19:48
+[1;38;5;12m   |[0m
+[1;38;5;12m17 |[0m 
+[1;38;5;12m18 |[0m /// Mint `amount` coins of the current contract's `asset_id` and send them to the Address `recipient`.
+[1;38;5;12m19 |[0m pub fn mint_to_address(amount: u64, recipient: Address) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                ^^^^^^^[0m [1;38;5;9mCould not find symbol "Address" in this scope.[0m
+[1;38;5;12m20 |[0m     mint(amount);
+[1;38;5;12m21 |[0m     transfer_to_output(amount, contract_id(), recipient);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:19:48
+[1;38;5;12m   |[0m
+[1;38;5;12m17 |[0m 
+[1;38;5;12m18 |[0m /// Mint `amount` coins of the current contract's `asset_id` and send them to the Address `recipient`.
+[1;38;5;12m19 |[0m pub fn mint_to_address(amount: u64, recipient: Address) {
+[1;38;5;12m   |[0m[1;38;5;9m                                                ^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m20 |[0m     mint(amount);
+[1;38;5;12m21 |[0m     transfer_to_output(amount, contract_id(), recipient);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/token.sw:21:32
+[1;38;5;12m   |[0m
+[1;38;5;12m19 |[0m 
+[1;38;5;12m20 |[0m     mint(amount);
+[1;38;5;12m21 |[0m     transfer_to_output(amount, contract_id(), recipient);
+[1;38;5;12m   |[0m[1;38;5;9m                                ^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "contract_id" in this scope.[0m
+[1;38;5;12m22 |[0m }
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:3:7
+[1;38;5;12m  |[0m
+[1;38;5;12m1 |[0m 
+[1;38;5;12m2 |[0m 
+[1;38;5;12m3 |[0m use ::address::Address;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^[0m [1;38;5;9mModule "address" could not be found.[0m
+[1;38;5;12m4 |[0m use ::b512::B512;
+[1;38;5;12m5 |[0m use ::context::registers::error;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:4:7
+[1;38;5;12m  |[0m
+[1;38;5;12m2 |[0m 
+[1;38;5;12m3 |[0m use ::address::Address;
+[1;38;5;12m4 |[0m use ::b512::B512;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^[0m [1;38;5;9mModule "b512" could not be found.[0m
+[1;38;5;12m5 |[0m use ::context::registers::error;
+[1;38;5;12m6 |[0m use ::hash::{HashMethod, hash_pair};
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:5:7
+[1;38;5;12m  |[0m
+[1;38;5;12m3 |[0m 
+[1;38;5;12m4 |[0m use ::b512::B512;
+[1;38;5;12m5 |[0m use ::context::registers::error;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^^^^^^^^^^^^[0m [1;38;5;9mModule "context::registers" could not be found.[0m
+[1;38;5;12m6 |[0m use ::hash::{HashMethod, hash_pair};
+[1;38;5;12m7 |[0m use ::result::*;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:15:30
+[1;38;5;12m   |[0m
+[1;38;5;12m13 |[0m 
+[1;38;5;12m14 |[0m /// Returns a `Result` to let the caller choose an error handling strategy.
+[1;38;5;12m15 |[0m pub fn ec_recover(signature: B512, msg_hash: b256) -> Result<B512, EcRecoverError> {
+[1;38;5;12m   |[0m[1;38;5;9m                              ^^^^[0m [1;38;5;9mCould not find symbol "B512" in this scope.[0m
+[1;38;5;12m16 |[0m     let public_key = ~B512::new();
+[1;38;5;12m17 |[0m     let was_error = asm(buffer: public_key.bytes, sig: signature.bytes, hash: msg_hash) {
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:15:30
+[1;38;5;12m   |[0m
+[1;38;5;12m13 |[0m 
+[1;38;5;12m14 |[0m /// Returns a `Result` to let the caller choose an error handling strategy.
+[1;38;5;12m15 |[0m pub fn ec_recover(signature: B512, msg_hash: b256) -> Result<B512, EcRecoverError> {
+[1;38;5;12m   |[0m[1;38;5;9m                              ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m16 |[0m     let public_key = ~B512::new();
+[1;38;5;12m17 |[0m     let was_error = asm(buffer: public_key.bytes, sig: signature.bytes, hash: msg_hash) {
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:15:62
+[1;38;5;12m   |[0m
+[1;38;5;12m13 |[0m 
+[1;38;5;12m14 |[0m /// Returns a `Result` to let the caller choose an error handling strategy.
+[1;38;5;12m15 |[0m pub fn ec_recover(signature: B512, msg_hash: b256) -> Result<B512, EcRecoverError> {
+[1;38;5;12m   |[0m[1;38;5;9m                                                              ^^^^[0m [1;38;5;9mCould not find symbol "B512" in this scope.[0m
+[1;38;5;12m16 |[0m     let public_key = ~B512::new();
+[1;38;5;12m17 |[0m     let was_error = asm(buffer: public_key.bytes, sig: signature.bytes, hash: msg_hash) {
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:15:62
+[1;38;5;12m   |[0m
+[1;38;5;12m13 |[0m 
+[1;38;5;12m14 |[0m /// Returns a `Result` to let the caller choose an error handling strategy.
+[1;38;5;12m15 |[0m pub fn ec_recover(signature: B512, msg_hash: b256) -> Result<B512, EcRecoverError> {
+[1;38;5;12m   |[0m[1;38;5;9m                                                              ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m16 |[0m     let public_key = ~B512::new();
+[1;38;5;12m17 |[0m     let was_error = asm(buffer: public_key.bytes, sig: signature.bytes, hash: msg_hash) {
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:16:23
+[1;38;5;12m   |[0m
+[1;38;5;12m14 |[0m 
+[1;38;5;12m15 |[0m pub fn ec_recover(signature: B512, msg_hash: b256) -> Result<B512, EcRecoverError> {
+[1;38;5;12m16 |[0m     let public_key = ~B512::new();
+[1;38;5;12m   |[0m[1;38;5;9m                       ^^^^[0m [1;38;5;9mCould not find symbol "B512" in this scope.[0m
+[1;38;5;12m17 |[0m     let was_error = asm(buffer: public_key.bytes, sig: signature.bytes, hash: msg_hash) {
+[1;38;5;12m18 |[0m         ecr buffer sig hash;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:16:29
+[1;38;5;12m   |[0m
+[1;38;5;12m14 |[0m 
+[1;38;5;12m15 |[0m pub fn ec_recover(signature: B512, msg_hash: b256) -> Result<B512, EcRecoverError> {
+[1;38;5;12m16 |[0m     let public_key = ~B512::new();
+[1;38;5;12m   |[0m[1;38;5;9m                             ^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m17 |[0m     let was_error = asm(buffer: public_key.bytes, sig: signature.bytes, hash: msg_hash) {
+[1;38;5;12m18 |[0m         ecr buffer sig hash;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:16:29
+[1;38;5;12m   |[0m
+[1;38;5;12m14 |[0m 
+[1;38;5;12m15 |[0m pub fn ec_recover(signature: B512, msg_hash: b256) -> Result<B512, EcRecoverError> {
+[1;38;5;12m16 |[0m     let public_key = ~B512::new();
+[1;38;5;12m   |[0m[1;38;5;9m                             ^^^[0m [1;38;5;9mNo method named "new" found for type "unknown due to error".[0m
+[1;38;5;12m17 |[0m     let was_error = asm(buffer: public_key.bytes, sig: signature.bytes, hash: msg_hash) {
+[1;38;5;12m18 |[0m         ecr buffer sig hash;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:31:38
+[1;38;5;12m   |[0m
+[1;38;5;12m29 |[0m 
+[1;38;5;12m30 |[0m /// Returns a `Result` to let the caller choose an error handling strategy.
+[1;38;5;12m31 |[0m pub fn ec_recover_address(signature: B512, msg_hash: b256) -> Result<Address, EcRecoverError> {
+[1;38;5;12m   |[0m[1;38;5;9m                                      ^^^^[0m [1;38;5;9mCould not find symbol "B512" in this scope.[0m
+[1;38;5;12m32 |[0m     let pub_key_result = ec_recover(signature, msg_hash);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:31:38
+[1;38;5;12m   |[0m
+[1;38;5;12m29 |[0m 
+[1;38;5;12m30 |[0m /// Returns a `Result` to let the caller choose an error handling strategy.
+[1;38;5;12m31 |[0m pub fn ec_recover_address(signature: B512, msg_hash: b256) -> Result<Address, EcRecoverError> {
+[1;38;5;12m   |[0m[1;38;5;9m                                      ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m32 |[0m     let pub_key_result = ec_recover(signature, msg_hash);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:31:70
+[1;38;5;12m   |[0m
+[1;38;5;12m29 |[0m 
+[1;38;5;12m30 |[0m /// Returns a `Result` to let the caller choose an error handling strategy.
+[1;38;5;12m31 |[0m pub fn ec_recover_address(signature: B512, msg_hash: b256) -> Result<Address, EcRecoverError> {
+[1;38;5;12m   |[0m[1;38;5;9m                                                                      ^^^^^^^[0m [1;38;5;9mCould not find symbol "Address" in this scope.[0m
+[1;38;5;12m32 |[0m     let pub_key_result = ec_recover(signature, msg_hash);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:31:70
+[1;38;5;12m   |[0m
+[1;38;5;12m29 |[0m 
+[1;38;5;12m30 |[0m /// Returns a `Result` to let the caller choose an error handling strategy.
+[1;38;5;12m31 |[0m pub fn ec_recover_address(signature: B512, msg_hash: b256) -> Result<Address, EcRecoverError> {
+[1;38;5;12m   |[0m[1;38;5;9m                                                                      ^^^^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m32 |[0m     let pub_key_result = ec_recover(signature, msg_hash);
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m /home/bob/.forc/git/checkouts/std-5ccdebd597dff83c/8a8e15b44e38e007b5b19d68736379bd9c0128df/sway-lib-std/src:40:21
+[1;38;5;12m   |[0m
+[1;38;5;12m38 |[0m 
+[1;38;5;12m39 |[0m         let address = hash_pair((pub_key.bytes)[0], (pub_key.bytes)[1], HashMethod::Sha256);
+[1;38;5;12m40 |[0m         Result::Ok(~Address::from(address))
+[1;38;5;12m   |[0m[1;38;5;9m                     ^^^^^^^[0m [1;38;5;9mCould not find symbol "Address" in this scope.[0m
+[1;38;5;12m41 |[0m     }
+[1;38;5;12m42 |[0m }
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:40:30
+[1;38;5;12m   |[0m
+[1;38;5;12m38 |[0m 
+[1;38;5;12m39 |[0m         let address = hash_pair((pub_key.bytes)[0], (pub_key.bytes)[1], HashMethod::Sha256);
+[1;38;5;12m40 |[0m         Result::Ok(~Address::from(address))
+[1;38;5;12m   |[0m[1;38;5;9m                              ^^^^[0m [1;38;5;9mUnknown type name.[0m
+[1;38;5;12m41 |[0m     }
+[1;38;5;12m42 |[0m }
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/ecr.sw:40:30
+[1;38;5;12m   |[0m
+[1;38;5;12m38 |[0m 
+[1;38;5;12m39 |[0m         let address = hash_pair((pub_key.bytes)[0], (pub_key.bytes)[1], HashMethod::Sha256);
+[1;38;5;12m40 |[0m         Result::Ok(~Address::from(address))
+[1;38;5;12m   |[0m[1;38;5;9m                              ^^^^[0m [1;38;5;9mNo method named "from" found for type "unknown due to error".[0m
+[1;38;5;12m41 |[0m     }
+[1;38;5;12m42 |[0m }
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+ [1;38;5;12m-->[0m sway-lib-std/src/reentrancy.sw:7:7
+[1;38;5;12m  |[0m
+[1;38;5;12m5 |[0m 
+[1;38;5;12m6 |[0m 
+[1;38;5;12m7 |[0m use ::context::call_frames::*;
+[1;38;5;12m  |[0m[1;38;5;9m       ^^^^^^^^^^^^^^^^^^^^[0m [1;38;5;9mModule "context::call_frames" could not be found.[0m
+[1;38;5;12m8 |[0m use ::constants::ZERO;
+[1;38;5;12m9 |[0m use ::assert::assert;
+[1;38;5;12m  |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/reentrancy.sw:10:7
+[1;38;5;12m   |[0m
+[1;38;5;12m 8 |[0m 
+[1;38;5;12m 9 |[0m use ::assert::assert;
+[1;38;5;12m10 |[0m use ::chain::auth::caller_is_external;
+[1;38;5;12m   |[0m[1;38;5;9m       ^^^^^^^^^^^[0m [1;38;5;9mModule "chain::auth" could not be found.[0m
+[1;38;5;12m11 |[0m use ::chain::log_u64;
+[1;38;5;12m12 |[0m use ::contract_id::ContractId;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/reentrancy.sw:11:7
+[1;38;5;12m   |[0m
+[1;38;5;12m 9 |[0m 
+[1;38;5;12m10 |[0m use ::chain::auth::caller_is_external;
+[1;38;5;12m11 |[0m use ::chain::log_u64;
+[1;38;5;12m   |[0m[1;38;5;9m       ^^^^^[0m [1;38;5;9mModule "chain" could not be found.[0m
+[1;38;5;12m12 |[0m use ::contract_id::ContractId;
+[1;38;5;12m13 |[0m use ::context::registers::frame_ptr;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/reentrancy.sw:12:7
+[1;38;5;12m   |[0m
+[1;38;5;12m10 |[0m 
+[1;38;5;12m11 |[0m use ::chain::log_u64;
+[1;38;5;12m12 |[0m use ::contract_id::ContractId;
+[1;38;5;12m   |[0m[1;38;5;9m       ^^^^^^^^^^^[0m [1;38;5;9mModule "contract_id" could not be found.[0m
+[1;38;5;12m13 |[0m use ::context::registers::frame_ptr;
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/reentrancy.sw:13:7
+[1;38;5;12m   |[0m
+[1;38;5;12m11 |[0m 
+[1;38;5;12m12 |[0m use ::contract_id::ContractId;
+[1;38;5;12m13 |[0m use ::context::registers::frame_ptr;
+[1;38;5;12m   |[0m[1;38;5;9m       ^^^^^^^^^^^^^^^^^^[0m [1;38;5;9mModule "context::registers" could not be found.[0m
+[1;38;5;12m14 |[0m 
+[1;38;5;12m15 |[0m pub fn reentrancy_guard() {
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/reentrancy.sw:22:34
+[1;38;5;12m   |[0m
+[1;38;5;12m20 |[0m 
+[1;38;5;12m21 |[0m     let mut reentrancy = false;
+[1;38;5;12m22 |[0m     let mut call_frame_pointer = frame_ptr();
+[1;38;5;12m   |[0m[1;38;5;9m                                  ^^^^^^^^^[0m [1;38;5;9mCould not find symbol "frame_ptr" in this scope.[0m
+[1;38;5;12m23 |[0m     // Get our current contract ID
+[1;38;5;12m24 |[0m     let this_id = contract_id();
+[1;38;5;12m   |[0m
+____
+
+[1;38;5;9merror[0m
+  [1;38;5;12m-->[0m sway-lib-std/src/reentrancy.sw:24:19
+[1;38;5;12m   |[0m
+[1;38;5;12m22 |[0m 
+[1;38;5;12m23 |[0m     // Get our current contract ID
+[1;38;5;12m24 |[0m     let this_id = contract_id();
+[1;38;5;12m   |[0m[1;38;5;9m                   ^^^^^^^^^^^[0m [1;38;5;9mCould not find symbol "contract_id" in this scope.[0m
+[1;38;5;12m25 |[0m 
+[1;38;5;12m26 |[0m     // Reentrancy cannot occur in an external context.
+[1;38;5;12m   |[0m
+____
+
+[0m[31m  Aborting due to 94 errors.
+[0mError: Failed to compile std
