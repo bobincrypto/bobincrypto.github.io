@@ -245,6 +245,16 @@ Book</a>.</p>
 <p>When compiling <code>wallet_contract</code> received 94 errors from <code>sway-lib-std</code>. Tried
 reinstalling <code>forc</code> and <code>fuel-core</code> but still got the same
 <a href="./assets/forc_error.txt">errors</a>.</p>
+<hr />
+<h2 id="april-27"><a class="header" href="#april-27">April 27</a></h2>
+<h3 id="sway-language-2"><a class="header" href="#sway-language-2">Sway Language</a></h3>
+<p>After updating <code>forc</code> to version <code>0.11.0</code> I was able to compile the
+<code>wallet_contract</code> correctly.</p>
+<blockquote>
+<p>Why is it necessary to create a script in order to call a contract?</p>
+</blockquote>
+<p>Next <a href="2022_log.html#may-2">Tuesday</a> I will continue looking at the <a href="https://fuellabs.github.io/sway/latest/introduction/sway-toolchain.html">Sway
+Book</a>.</p>
 
                     </main>
 
@@ -263,6 +273,20 @@ reinstalling <code>forc</code> and <code>fuel-core</code> but still got the same
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
