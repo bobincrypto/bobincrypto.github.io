@@ -157,6 +157,14 @@
 </ul>
 </li>
 </ul>
+<h2 id="questions"><a class="header" href="#questions">Questions</a></h2>
+<ul>
+<li>What is reentrancy ?
+<ul>
+<li>https://docs.soliditylang.org/en/v0.8.4/security-considerations.html#re-entrancy</li>
+</ul>
+</li>
+</ul>
 
                     </main>
 
@@ -187,6 +195,20 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

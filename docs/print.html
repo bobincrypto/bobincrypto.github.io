@@ -190,6 +190,14 @@ on <a href="https://www.twitch.tv/bobincrypto">Twitch</a>. </p>
 </ul>
 </li>
 </ul>
+<h2 id="questions"><a class="header" href="#questions">Questions</a></h2>
+<ul>
+<li>What is reentrancy ?
+<ul>
+<li>https://docs.soliditylang.org/en/v0.8.4/security-considerations.html#re-entrancy</li>
+</ul>
+</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="readings"><a class="header" href="#readings">Readings</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ethereum"><a class="header" href="#ethereum">Ethereum</a></h1>
 <h2 id="merge"><a class="header" href="#merge">Merge</a></h2>
@@ -209,18 +217,18 @@ on <a href="https://www.twitch.tv/bobincrypto">Twitch</a>. </p>
 <p><img src="https://pbs.twimg.com/media/FO-BWzGXoAg5osp?format=jpg&amp;name=900x900" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="log"><a class="header" href="#log">Log</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="2022"><a class="header" href="#2022">2022</a></h1>
-<h2 id="march-29"><a class="header" href="#march-29">March 29</a></h2>
+<h2 id="march-29---setting-up-my-website"><a class="header" href="#march-29---setting-up-my-website">March 29 - Setting up my website</a></h2>
 <ul>
 <li>Setup my <a href="https://bobincrypto.github.io">website</a></li>
 <li>Read about <a href="./mina.html">Mina Protocol</a></li>
 </ul>
-<h2 id="april-1"><a class="header" href="#april-1">April 1</a></h2>
+<h2 id="april-1---ethereum-merge"><a class="header" href="#april-1---ethereum-merge">April 1 - Ethereum Merge</a></h2>
 <p><a href="./ethereum.html#merge">Ethereum Merge</a> currently tested on the Kiln Testnet. It would be interesting to
 run the EL/CL nodes.</p>
 <p><a href="./ethereum.html#shanghai">Shanghai Network</a> has EIPs Considered For Inclusion.
 Would be interesting to see what changes it implements.</p>
 <hr />
-<h2 id="april-8"><a class="header" href="#april-8">April 8</a></h2>
+<h2 id="april-8---sway-language-and-fuelvm"><a class="header" href="#april-8---sway-language-and-fuelvm">April 8 - Sway Language and FuelVM</a></h2>
 <h3 id="sway-language"><a class="header" href="#sway-language">Sway Language</a></h3>
 <ul>
 <li><a href="https://fuellabs.github.io/sway/latest/">Sway Book</a></li>
@@ -251,32 +259,42 @@ Would be interesting to see what changes it implements.</p>
 </li>
 </ul>
 <hr />
-<h2 id="april-26"><a class="header" href="#april-26">April 26</a></h2>
-<h3 id="sway-language-1"><a class="header" href="#sway-language-1">Sway Language</a></h3>
+<h2 id="april-26---sway-language"><a class="header" href="#april-26---sway-language">April 26 - Sway Language</a></h2>
 <p>Continuing with the <a href="https://fuellabs.github.io/sway/latest/introduction/overview.html">Sway
 Book</a>.</p>
 <p>When compiling <code>wallet_contract</code> received 94 errors from <code>sway-lib-std</code>. Tried
 reinstalling <code>forc</code> and <code>fuel-core</code> but still got the same
 <a href="./assets/forc_error.txt">errors</a>.</p>
 <hr />
-<h2 id="april-27"><a class="header" href="#april-27">April 27</a></h2>
-<h3 id="sway-language-2"><a class="header" href="#sway-language-2">Sway Language</a></h3>
+<h2 id="april-27---sway-language"><a class="header" href="#april-27---sway-language">April 27 - Sway Language</a></h2>
 <p>After updating <code>forc</code> to version <code>0.11.0</code> I was able to compile the
 <code>wallet_contract</code> correctly.</p>
 <blockquote>
 <p>Why is it necessary to create a script in order to call a contract?</p>
 </blockquote>
-<p>Next <a href="2022_log.html#may-2">Tuesday</a> I will continue looking at the <a href="https://fuellabs.github.io/sway/latest/introduction/sway-toolchain.html">Sway
+<p>Next <a href="2022_log.html#may-04---sway-language">Tuesday</a> I will continue looking at the <a href="https://fuellabs.github.io/sway/latest/introduction/sway-toolchain.html">Sway
 Book</a>.</p>
 <hr />
-<h2 id="april-28"><a class="header" href="#april-28">April 28</a></h2>
-<h3 id="dotfiles"><a class="header" href="#dotfiles">Dotfiles</a></h3>
+<h2 id="april-28---setting-up-my-dotfiles"><a class="header" href="#april-28---setting-up-my-dotfiles">April 28 - Setting up my dotfiles</a></h2>
 <p>Today I'm creating a very simple
 <a href="https://github.com/bobincrypto/dotfiles">dotfiles</a> repository only containing a few
 lines configuring vim.</p>
 <p>Possibly would be good to read the <a href="https://learnvimscriptthehardway.stevelosh.com/">Learn Vimscript the Hard
 Way</a> book in future
 streams.</p>
+<hr />
+<h2 id="may-4---sway-language"><a class="header" href="#may-4---sway-language">May 4 - Sway Language</a></h2>
+<p>Looked at the language basics, it looks very similar to Rust. </p>
+<ul>
+<li>Can <strong>Contract B</strong> call <strong>Contract A</strong> if I don't have <strong>Contract A</strong>'s
+code?.</li>
+</ul>
+<blockquote>
+<p>FuelVM do not need to serialize data to pass between contracts; instead
+they simply pass a pointer to the data. This is because the FuelVM has a
+shared global memory [<a href="https://fuellabs.github.io/sway/latest/blockchain-development/calling_contracts.html#differences-from-ethereum">The Sway Book - Differences from
+Ethereum</a>]</p>
+</blockquote>
 
                     </main>
 
@@ -295,6 +313,20 @@ streams.</p>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
